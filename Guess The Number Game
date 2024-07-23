@@ -1,0 +1,30 @@
+import random
+
+def guess_the_number():
+    print("welcome to guess the number:")
+    print("I've choosen a number between 1 and 20")
+    print("To devio aur sajjano aarambh karte hai is khel ko")
+    print("Is khel me vittiya jokhim nhi hai bindas hokar kheliye , agar hota bhi to bhi kya hi ho jata ;)")
+
+secret_number = random.randint(1, 20)
+attempts=0
+
+while True:
+    try:
+        guess= int(input("To Kya Guess Kiya hai aapne:"))
+        attempts +=1
+        if guess < secret_number:
+            print ("Galat Jawab, number Guess kiye Number se chhota hai (lifeline nhi hai , Firse khel :)")
+        elif guess> secret_number:
+            print ("Galat Jawab, Number Guess kiye Number se bada hai (lifeline nhi hai , Firse khel :) ")
+        else:
+            print ("7 crore! Sahi jawab kya,kijiyega itne paiso ka (Amitabh ji se mag lena ^_^ (ab unse contact kese karna hai vo tum dekho mera kam khatam :-) "))
+            break #to exit the loop
+        except ValueError:
+            print ("Galat Input kiya hai yarr. Valid Number dalo yarr.)
+
+print ("To deviyo aur sajjano Dhanyawad aapka is khel ko khelna aur dekhne ke liye")
+print (" For More Such Python codes , Stay tuned and visit!: (github.com/m-pharkya) Milte hai kisi aur program me :)")
+
+#Start the game
+guess_the_number()
