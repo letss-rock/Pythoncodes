@@ -18,13 +18,14 @@ while True:
         elif guess> secret_number:
             print ("Galat Jawab, Number Guess kiye Number se bada hai (lifeline nhi hai , Firse khel :) ")
         else:
-            print ("7 crore! Sahi jawab kya,kijiyega itne paiso ka (Amitabh ji se mag lena ^_^ (ab unse contact kese karna hai vo tum dekho mera kam khatam :-) "))
+            print ("7 crore! Sahi jawab kya,kijiyega itne paiso ka (Amitabh ji se mag lena ^_^ (ab unse contact kese karna hai vo tum dekho mera kam khatam :-) ")
             break #to exit the loop
-        except ValueError:
-            print ("Galat Input kiya hai yarr. Valid Number dalo yarr.)
+    except ValueError:
+            print ("Galat Input kiya hai yarr. Valid Number dalo yarr.")
 
 print ("To deviyo aur sajjano Dhanyawad aapka is khel ko khelna aur dekhne ke liye")
 print (" For More Such Python codes , Stay tuned and visit!: (github.com/m-pharkya) Milte hai kisi aur program me :)")
 
 #Start the game
 guess_the_number()
+
